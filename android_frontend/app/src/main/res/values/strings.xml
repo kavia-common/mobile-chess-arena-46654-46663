@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Chess Arena</string>
+    <string name="app_title">Chess Arena</string>
+    <string name="move_history">Move History</string>
+    <string name="undo">Undo</string>
+    <string name="reset">Reset</string>
+    <string name="toggle_ai">Toggle AI</string>
+    <string name="flip_board">Flip</string>
+    <string name="ai_move">AI Move</string>
+    <string name="board_cd">Chess board</string>
+    <string name="piece_white">White</string>
+    <string name="piece_black">Black</string>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <color name="primary">#2563EB</color>
+    <color name="secondary">#F59E0B</color>
+    <color name="success">#F59E0B</color>
+    <color name="error">#EF4444</color>
+    <color name="bg">#f9fafb</color>
+    <color name="surface">#ffffff</color>
+    <color name="textPrimary">#111827</color>
+    <color name="textSecondary">#374151</color>
+    <color name="tile_light">#E5E7EB</color>
+    <color name="tile_dark">#93C5FD</color>
+    <color name="highlight">#34D399</color>
+    <color name="last_move">#FBBF24</color>
+    <color name="in_check">#FCA5A5</color>
+</resources>

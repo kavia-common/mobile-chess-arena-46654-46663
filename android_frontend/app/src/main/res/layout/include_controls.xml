@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/controls_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingTop="8dp"
+    android:paddingBottom="4dp">
+
+    <Button
+        android:id="@+id/btn_undo"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:text="@string/undo"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shape_button_primary" />
+
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="1dp" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:text="@string/reset"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shape_button_primary" />
+
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="1dp" />
+
+    <Button
+        android:id="@+id/btn_toggle_mode"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:text="@string/toggle_ai"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shape_button_primary" />
+
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="1dp" />
+
+    <Button
+        android:id="@+id/btn_flip"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:text="@string/flip_board"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shape_button_primary" />
+
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="1dp" />
+
+    <Button
+        android:id="@+id/btn_ai_move"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:text="@string/ai_move"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shape_button_primary" />
+
+</LinearLayout>

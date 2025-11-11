@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/include_toolbar"
+        layout="@layout/include_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:id="@+id/board_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/surface"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/include_board"
+                layout="@layout/view_chess_board" />
+
+            <include
+                android:id="@+id/include_controls"
+                layout="@layout/include_controls" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/history_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:background="@color/surface"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/history_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/move_history"
+                android:textColor="@color/textPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_history"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:overScrollMode="ifContentScrolls"
+                android:fadingEdgeLength="8dp"
+                android:requiresFadingEdge="vertical" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
