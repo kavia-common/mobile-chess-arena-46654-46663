@@ -11,6 +11,7 @@
         android:id="@+id/include_toolbar"
         layout="@layout/include_toolbar" />
 
+    <!-- Responsive content: horizontal two-pane by default; stacks on narrow widths -->
     <LinearLayout
         android:id="@+id/content_container"
         android:layout_width="match_parent"
@@ -19,11 +20,12 @@
         android:orientation="horizontal"
         android:padding="12dp">
 
+        <!-- Board pane: prioritized width and height -->
         <LinearLayout
             android:id="@+id/board_container"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="7"
             android:background="@color/surface"
             android:padding="8dp"
             android:elevation="2dp"
@@ -38,11 +40,12 @@
                 layout="@layout/include_controls" />
         </LinearLayout>
 
+        <!-- History pane: gets less width; scrolls independently -->
         <LinearLayout
             android:id="@+id/history_container"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="3"
             android:layout_marginStart="12dp"
             android:background="@color/surface"
             android:padding="8dp"

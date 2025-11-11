@@ -34,6 +34,7 @@ class MoveHistoryAdapter :
         holder.num.text = "${row.number}."
         holder.white.text = row.white ?: ""
         holder.black.text = row.black ?: ""
+        holder.itemView.contentDescription = "Move ${row.number}. White ${row.white ?: "no move"}, Black ${row.black ?: "no move"}"
     }
 
     companion object {

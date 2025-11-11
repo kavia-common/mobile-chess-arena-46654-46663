@@ -6,10 +6,10 @@
     android:layout_weight="1"
     android:foregroundGravity="center">
 
+    <!-- The board view fills the frame; ChessBoardView will measure itself to square and center content -->
     <org.example.app.ui.ChessBoardView
         android:id="@+id/chessBoard"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@string/board_cd" />
-
 </FrameLayout>
